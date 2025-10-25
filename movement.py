@@ -1,15 +1,13 @@
 """
 FUNCTION SLIDE_LINE (ORIGINAL_LIST):
-    PURPOSE: Moves all non-zero tiles to the beginning of the list (left/top) 
-    and pads the rest of the list with zeros, without performing merges.
+    PURPOSE: Moves all non-zero tiles to the beginning of the list (left/top) and pads the rest of the list with zeros, without performing merges.
 
 FUNCTION MERGE_LINE (SLID_LIST, CURRENT_SCORE):
     PURPOSE: Combines adjacent, identical tiles in a list that has already been slid.
     It also updates the score when a merge occurs.
 
 FUNCTION PROCESS_LINE (LINE, SCORE):
-    PURPOSE: Executes the full movement logic (Slide, Merge, Final Slide) 
-    on a single row or column.
+    PURPOSE: Executes the full movement logic (Slide, Merge, Final Slide) on a single row or column.
 """
 
 def slide_line(original_list):
