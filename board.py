@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import numpy as np
 import random
 
@@ -14,6 +15,7 @@ The goal is to present the 4x4 grid legibly in the console for the player.
 
 def initialize_board():
     board = np.zeros((4,4))
+
     return board
 
 def generate_new_tile(board):
@@ -34,6 +36,7 @@ def generate_new_tile(board):
             tile_value = 4
         
         board[random_row][random_col] = tile_value
+
     return board
 
 def display_board(board,score):
@@ -52,5 +55,5 @@ def display_board(board,score):
         
         print(formatted_row)
         print("----------------")
-    
+
     print("Movement instructions: 'W', 'A', 'S', 'D' or 'Quit'")
